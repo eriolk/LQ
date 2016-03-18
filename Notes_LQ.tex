@@ -761,23 +761,94 @@ From this equation we can derive the differential cross section for the process 
 where we have performed the integration over $x$. We note that in this case $Q^2=xys$ and since the delta function imposes $x=M^2/s$, $Q^2=yM^2$, restoring the range of the inelasticity parameter, $0\leqslant y \leqslant 1$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Computation of the Cross Section - Triplet LQ scenario}
-\beq
-\mathcal{M}_1=-\frac{\lambda^{i*}_{\ell}\lambda^j_{\ell^{\prime}}}{D(\chi_1;p+k)}[\,\xbar{v}_R(\nu_{\ell};p)\,u_L(U_i;k)\,][\,\xbar{u}_L(U_j;r)\,v_R(\nu_{\ell^{\prime}};q)\,]
-\eeq
-\beq
-\mathcal{M}_2=-\frac{\lambda^{i*}_{\ell}\lambda^j_{\ell^{\prime}}}{2 D(\chi_2;p+k)}[\,\xbar{v}_R(\nu_{\ell};p)\,u_L(D_i;k)\,][\,\xbar{u}_L(D_j;r)\,v_R(\nu_{\ell^{\prime}};q)\,]
-\eeq
-\beq
-\mathcal{M}_3=-\frac{\lambda^{j*}_{\ell}\lambda^i_{\ell^{\prime}}}{2 D(\chi_1;p-r)}[\,\xbar{v}_R(\nu_{\ell};p)\,v_L(\xbar{U}_j;r)\,][\,\xbar{v}_L(\xbar{U}_i;k)\,v_R(\nu_{\ell^{\prime}};q)\,]
-\eeq
-\beq
-\mathcal{M}_4=-\frac{\lambda^{j*}_{\ell}\lambda^i_{\ell^{\prime}}}{2 D(\chi_2;p-r)}[\,\xbar{v}_R(\nu_{\ell};p)\,v_L(\xbar{D}_j;r)\,][\,\xbar{v}_L(\xbar{D}_i;k)\,v_R(\nu_{\ell^{\prime}};q)\,]
-\eeq
+The amplitudes corresponding to the neutral diagrams depicted in Fig.~ are given by
+\bea
+\label{eq112}
+\mathcal{M}_1 & = & -\lambda^{i*}_{\ell}\lambda^j_{\ell^{\prime}}\mathbb{P}_{\chi_1}(p+k)[\,\xbar{v}_R(\nu_{\ell};p)\,u_L(U_i;k)\,][\,\xbar{u}_L(U_j;r)\,v_R(\nu_{\ell^{\prime}};q)\,] \\
+\label{eq113}
+\mathcal{M}_2 & = & -\frac{\lambda^{i*}_{\ell}\lambda^j_{\ell^{\prime}}\mathbb{P}_{\chi_2}(p+k)}{2}[\,\xbar{v}_R(\nu_{\ell};p)\,u_L(D_i;k)\,][\,\xbar{u}_L(D_j;r)\,v_R(\nu_{\ell^{\prime}};q)\,] \\
+\label{eq114}
+\mathcal{M}_3 & = & -\lambda^{j*}_{\ell}\lambda^i_{\ell^{\prime}}\mathbb{P}_{\chi_1}(p-r)[\,\xbar{v}_R(\nu_{\ell};p)\,v_L(\xbar{U}_j;r)\,][\,\xbar{v}_L(\xbar{U}_i;k)\,v_R(\nu_{\ell^{\prime}};q)\,] \\
+\label{eq115}
+\mathcal{M}_4 & = & -\frac{\lambda^{j*}_{\ell}\lambda^i_{\ell^{\prime}}\mathbb{P}_{\chi_2}(p-r)}{2}[\,\xbar{v}_R(\nu_{\ell};p)\,v_L(\xbar{D}_j;r)\,][\,\xbar{v}_L(\xbar{D}_i;k)\,v_R(\nu_{\ell^{\prime}};q)\,],
+\eea
+and the associated unpolarized squared amplitudes are 
 %%%%%%%%%%%%%%%%%%%%%%%%
+\bea
+\label{eq116}
+|\mathcal{M}_1|^2_{\mathrm{unpol.}} & = & |\lambda^{i}_{\ell}\lambda^j_{\ell^{\prime}}|^2|\mathbb{P}_{\chi_1}(p+k)|^2\frac{\hat{s}\,(\hat{s}-m^2_{U_j})}{2} \\
+\label{eq117}
+|\mathcal{M}_2|^2_{\mathrm{unpol.}} & = & |\lambda^{i}_{\ell}\lambda^j_{\ell^{\prime}}|^2|\mathbb{P}_{\chi_2}(p+k)|^2 \frac{\,\hat{s}^2}{8\,} \\
+\label{eq118}
+|\mathcal{M}_3|^2_{\mathrm{unpol.}} & = & |\lambda^{j}_{\ell}\lambda^i_{\ell^{\prime}}|^2|\mathbb{P}_{\chi_1}(p-r)|^2\frac{\hat{u}(\hat{u}-m^2_{\scriptsize\xbar{U}_j})}{2}\ \\
+\label{eq119}
+|\mathcal{M}_4|^2_{\mathrm{unpol.}} & = & |\lambda^{j}_{\ell}\lambda^i_{\ell^{\prime}}|^2|\mathbb{P}_{\chi_2}(p-r)|^2\frac{\hat{u}^2}{8},
+\eea
+where $\mathbb{P}_{x}(p)\equiv (p^2-m^2_x-im_x\Gamma_x)^{-1}$. For the charged cases shown in Fig.~ we have
+\bea
+\label{eq120}
+\mathcal{M}_{I} & = & -\frac{\lambda^{i*}_{\ell}\lambda^j_{\ell^{\prime}}\mathbb{P}_{\chi_2}(p+k)}{2}[\,\xbar{v}_R(\nu_{\ell};p)\,u_L(D_i;k)\,][\,\xbar{u}_L(U_j;r)\,v_R(\nu_{\ell^{\prime}};q)\,] \\
+\label{eq121}
+\mathcal{M}_{II} & = & -\frac{\lambda^{j*}_{\ell}\lambda^i_{\ell^{\prime}}\mathbb{P}_{\chi_2}(p-r)}{2}[\,\xbar{v}_R(\nu_{\ell};p)\,v_L(\xbar{D}_j;r)\,][\,\xbar{v}_L(\xbar{U}_i;k)\,v_R(\nu_{\ell^{\prime}};q)\,],
+\eea
+and the corresponding unpolarized squared amplitudes,
+\bea
+\label{eq122}
+|\mathcal{M}_I|^2_{\mathrm{unpol.}} & = & |\lambda^{i}_{\ell}\lambda^j_{\ell^{\prime}}|^2|\mathbb{P}_{\chi_2}(p+k)|^2 \frac{\hat{s}\,(\hat{s}-m^2_{U_j})}{8} \\
+\label{eq123}
+|\mathcal{M}_{II}|^2_{\mathrm{unpol.}} & = & |\lambda^{j}_{\ell}\lambda^i_{\ell^{\prime}}|^2|\mathbb{P}_{\chi_2}(p-r)|^2\frac{\hat{u}^2}{8}. 
+\eea 
+Note that $|\mathcal{M}_{II}|^2_{\mathrm{unpol.}}=|\mathcal{M}_4|^2_{\mathrm{unpol.}}$ and if the up-quark masses are neglected, $|\mathcal{M}_I|^2_{\mathrm{unpol.}}=|\mathcal{M}_2|^2_{\mathrm{unpol.}}$. Now, let us focus on the resonant diagrams and use the narrow-width approximation for the LQs $\chi_1$ and $\chi_2$. By neglecting the up-quark masses in Eqs.~(\ref{eq116}), (\ref{eq118}) and (\ref{eq123}) we obtain for the process $\nu_{\ell} N\to \nu_{\ell^{\prime}}+X$:
 \beq
-|\mathcal{M}_1|^2_{\mathrm{unpol.}}=\frac{|\lambda^{i}_{\ell}\lambda^j_{\ell^{\prime}}|^2}{2|D(\chi_1;p+k)|^2}\hat{s}\,(\hat{s}-m^2_{U_j}) 
+\label{eq124}
+\frac{d\sigma}{dxdy}=\sum_{i,j}|\lambda^i_{\ell}\lambda^j_{\ell^{\prime}}|^2 \left\{ \frac{f_{u_i}(x,Q^2)}{32\,m_{\chi_1}\Gamma_{\chi_1}}\,\delta(xs-m^2_{\chi_1})+\frac{f_{d_i}(x,Q^2)}{128\, m_{\chi_2}\Gamma_{\chi_2}}\,\delta(xs-m^2_{\chi_2}) \right\}
+\eeq 
+By performing the integration over $x$, we encounter
+\beq
+\label{eq125}
+\frac{d\sigma}{dy}(\nu_{\ell} N\to \nu_{\ell^{\prime}}+X)=\sum_{i,j}\frac{|\lambda^i_{\ell}\lambda^j_{\ell^{\prime}}|^2}{32s}\left\{\frac{m_{\chi_1}}{\Gamma_{\chi_1}}f_{u_i}(m^2_{\chi_1}/s,m^2_{\chi_1}y)+\frac{m_{\chi_2}}{4\Gamma_{\chi_2}}f_{d_i}(m^2_{\chi_2}/s,m^2_{\chi_2}y) \right\}.
 \eeq
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+By a similar computation we can obtain the differential cross section for the charged case in which only $\chi_2$ is involved,
+\beq
+\label{eq126}
+\frac{d\sigma}{dy}(\nu_{\ell} N\to \ell^{\prime}+X)=\sum_{i,j}\frac{|\lambda^i_{\ell}\lambda^j_{\ell^{\prime}}|^2}{128s}\frac{m_{\chi_2}}{\Gamma_{\chi_2}} f_{d_i}(m^2_{\chi_2}/s,m^2_{\chi_2}y).
+\eeq
+Under the assumption that the interaction of the LQs with fermions proceeds only between the first family of quarks and the first and second families of leptons, the above expressions can be simplified as follows,
+\bea
+\label{eq127}
+\frac{d\sigma}{dy}(\nu_{e}N\to \nu_{e} X)&=&\frac{|\lambda^1_1|^4}{32s}F(y) \\
+\label{eq128}
+\frac{d\sigma}{dy}(\nu_{\mu}N\to \nu_{\mu} X)&=&\frac{|\lambda^1_2|^4}{32s}F(y) \\
+\label{eq129}
+\frac{d\sigma}{dy}(\nu_{\mu}N\to \nu_{e} X)&=&\frac{|\lambda^1_1|^2|\lambda^1_2|^2}{32s}F(y) \\
+\label{eq130}
+\frac{d\sigma}{dy}(\nu_{e}N\to \nu_{\mu} X)&=&\frac{d\sigma}{dy}(\nu_{\mu}N\to \nu_{e} X)
+\eea
+for the neutral processes, where we have used the definition
+\beq
+\label{eq131}
+F(y)\equiv \frac{m_{\chi_1}}{\Gamma_{\chi_1}}f_u(m^2_{\chi_1}/s,m^2_{\chi_1}y)+\frac{m_{\chi_2}}{4\Gamma_{\chi_2}}f_d(m^2_{\chi_2}/s,m^2_{\chi_2}y),
+\eeq 
+and
+\bea
+\label{eq132}
+\frac{d\sigma}{dy}(\nu_{e}N\to e^- X)&=&\frac{|\lambda^1_1|^4}{128s}\frac{m_{\chi_2}}{\Gamma_{\chi_2}}\,f_d(m^2_{\chi_2}/s,m^2_{\chi_2}y)\\
+\label{eq133}
+\frac{d\sigma}{dy}(\nu_{\mu}N\to \mu^- X)&=&\frac{|\lambda^1_2|^4}{128s}\frac{m_{\chi_2}}{\Gamma_{\chi_2}}\,f_d(m^2_{\chi_2}/s,m^2_{\chi_2}y)\\
+\label{eq134}
+\frac{d\sigma}{dy}(\nu_{e}N\to \mu^- X)&=&\frac{|\lambda^1_1|^2|\lambda^1_2|^2}{128s}\frac{m_{\chi_2}}{\Gamma_{\chi_2}}\,f_d(m^2_{\chi_2}/s,m^2_{\chi_2}y)\\
+\label{eq135}
+\frac{d\sigma}{dy}(\nu_{\mu}N\to e^- X)&=& \frac{d\sigma}{dy}(\nu_{e}N\to \mu^- X)
+\eea 
+for the charged processes. Under the assumptions that $\Gamma_{\chi_1}$ is dominated by the decay $\chi_1\to \nu_{\ell}u_j$ and $\Gamma_{\chi_2}$ is dominated by $\chi_2\to \nu_{\ell}d_j$ and $\chi_2\to \ell^- u_j$, the width can be written in terms of the couplings as follows,
+\bea
+\label{eq136}
+\Gamma_{\chi_1}&=&\frac{m_{\chi_1}}{16\pi}(|\lambda^1_1|^2+|\lambda^1_2|^2) \\
+\label{eq137}
+\Gamma_{\chi_2}&=&\frac{m_{\chi_2}}{16\pi}(|\lambda^1_1|^2+|\lambda^1_2|^2) 
+\eea 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
 \appendix
 \section{Electroweak-singlet LQ Lagrangian}
 \label{ap1}
