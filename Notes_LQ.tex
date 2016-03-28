@@ -314,7 +314,7 @@ from which
 Finally, we define the variable $y$ which in the rest frame of the nucleon is the fraction of the neutrino's energy that is transferred to the hadronic system,
 \beq
 \label{eq31}
-y\equiv \frac{2P\cdot\tilde{Q}}{2P\cdot p}=\frac{2k\cdot(p-q)}{2k\cdot p}=\frac{\hat{s}+\hat{u}}{\hat{s}}=1-\frac{\hat{u}}{\hat{s}}.
+y\equiv \frac{2P\cdot\tilde{Q}}{2P\cdot p}=\frac{2k\cdot(p-q)}{2k\cdot p}=\frac{\hat{s}+\hat{u}}{\hat{s}}=1+\frac{\hat{u}}{\hat{s}}.
 \eeq
 From Eq.~(\ref{eq31}) we obtain the following relation between the Mandelstam variables $\hat{u}$ and $\hat{s}$ of the partons and the dimensionless quantity $y$,
 \beq
@@ -761,35 +761,68 @@ From this equation we can derive the differential cross section for the process 
 where we have performed the integration over $x$. We note that in this case $Q^2=xys$ and since the delta function imposes $x=M^2/s$, $Q^2=yM^2$, restoring the range of the inelasticity parameter, $0\leqslant y \leqslant 1$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Computation of the Cross Section - Triplet LQ scenario}
-The amplitudes corresponding to the neutral diagrams depicted in Fig.~ are given by
+\begin{center}
+\begin{figure}[H]
+\centering
+%\hspace*{-0.4cm}
+\subfloat{\includegraphics[scale=0.55]{triplet_N1.pdf}}
+\hspace*{0.2\textwidth}
+%\label{fig1a}}
+\subfloat{\includegraphics[scale=0.55]{triplet_N3.pdf}}\\[8mm]
+%\label{fig1b}}
+\subfloat{\includegraphics[scale=0.55]{triplet_N2.pdf}}
+\hspace*{0.2\textwidth}
+%\label{fig1a}}
+\subfloat{\includegraphics[scale=0.55]{triplet_N4.pdf}}\\
+\caption{Neutral process diagrams. The upper diagrams correspond to the scattering of a neutrino of flavour $\ell$ by an up-type quark or antiquark of the $i$-th family whereas the lower diagrams depicts the scattering by a down-type quark or antiquark of the $i$-th family.}
+\label{fig4}
+\end{figure}
+\end{center}
+\par
+
+The amplitudes corresponding to the neutral diagrams depicted in Fig.~\ref{fig4} are given by
 \bea
 \label{eq112}
-\mathcal{M}_1 & = & -\lambda^{i*}_{\ell}\lambda^j_{\ell^{\prime}}\mathbb{P}_{\chi_1}(p+k)[\,\xbar{v}_R(\nu_{\ell};p)\,u_L(U_i;k)\,][\,\xbar{u}_L(U_j;r)\,v_R(\nu_{\ell^{\prime}};q)\,] \\
-\label{eq113}
-\mathcal{M}_2 & = & -\frac{\lambda^{i*}_{\ell}\lambda^j_{\ell^{\prime}}\mathbb{P}_{\chi_2}(p+k)}{2}[\,\xbar{v}_R(\nu_{\ell};p)\,u_L(D_i;k)\,][\,\xbar{u}_L(D_j;r)\,v_R(\nu_{\ell^{\prime}};q)\,] \\
+\mathcal{M}_1\equiv \mathcal{M}(\nu_{\ell}\,U_i\to\nu_{\ell^{\prime}}\,U_j) & = & -\lambda^{i*}_{\ell}\lambda^j_{\ell^{\prime}}\mathbb{P}_{\chi_1}(p+k)[\,\xbar{v}_R(\nu_{\ell};p)\,u_L(U_i;k)\,][\,\xbar{u}_L(U_j;r)\,v_R(\nu_{\ell^{\prime}};q)\,] \\[2mm]
 \label{eq114}
-\mathcal{M}_3 & = & -\lambda^{j*}_{\ell}\lambda^i_{\ell^{\prime}}\mathbb{P}_{\chi_1}(p-r)[\,\xbar{v}_R(\nu_{\ell};p)\,v_L(\xbar{U}_j;r)\,][\,\xbar{v}_L(\xbar{U}_i;k)\,v_R(\nu_{\ell^{\prime}};q)\,] \\
+\mathcal{M}_2\equiv \,\mathcal{M}(\nu_{\ell}\,\xbar{U}_i\to\nu_{\ell^{\prime}}\,\xbar{U}_j)& = & -\lambda^{j*}_{\ell}\lambda^i_{\ell^{\prime}}\mathbb{P}_{\chi_1}(p-r)[\,\xbar{v}_R(\nu_{\ell};p)\,v_L(\xbar{U}_j;r)\,][\,\xbar{v}_L(\xbar{U}_i;k)\,v_R(\nu_{\ell^{\prime}};q)\,]\qquad\qquad \\[2mm]
+\label{eq113}
+\mathcal{M}_3\equiv \mathcal{M}(\nu_{\ell}D_i\to\nu_{\ell^{\prime}}D_j)& = & -\frac{\lambda^{i*}_{\ell}\lambda^j_{\ell^{\prime}}\mathbb{P}_{\chi_2}(p+k)}{2}[\,\xbar{v}_R(\nu_{\ell};p)\,u_L(D_i;k)\,][\,\xbar{u}_L(D_j;r)\,v_R(\nu_{\ell^{\prime}};q)\,]\quad\,\, \\[2mm]
 \label{eq115}
-\mathcal{M}_4 & = & -\frac{\lambda^{j*}_{\ell}\lambda^i_{\ell^{\prime}}\mathbb{P}_{\chi_2}(p-r)}{2}[\,\xbar{v}_R(\nu_{\ell};p)\,v_L(\xbar{D}_j;r)\,][\,\xbar{v}_L(\xbar{D}_i;k)\,v_R(\nu_{\ell^{\prime}};q)\,],
+\mathcal{M}_4\equiv \mathcal{M}(\nu_{\ell}\,\xbar{D}_i\to\nu_{\ell^{\prime}}\,\xbar{D}_j)& = & -\frac{\lambda^{j*}_{\ell}\lambda^i_{\ell^{\prime}}\mathbb{P}_{\chi_2}(p-r)}{2}[\,\xbar{v}_R(\nu_{\ell};p)\,v_L(\xbar{D}_j;r)\,][\,\xbar{v}_L(\xbar{D}_i;k)\,v_R(\nu_{\ell^{\prime}};q)\,],\quad
 \eea
 and the associated unpolarized squared amplitudes are 
 %%%%%%%%%%%%%%%%%%%%%%%%
 \bea
 \label{eq116}
 |\mathcal{M}_1|^2_{\mathrm{unpol.}} & = & |\lambda^{i}_{\ell}\lambda^j_{\ell^{\prime}}|^2|\mathbb{P}_{\chi_1}(p+k)|^2\frac{\hat{s}\,(\hat{s}-m^2_{U_j})}{2} \\
-\label{eq117}
-|\mathcal{M}_2|^2_{\mathrm{unpol.}} & = & |\lambda^{i}_{\ell}\lambda^j_{\ell^{\prime}}|^2|\mathbb{P}_{\chi_2}(p+k)|^2 \frac{\,\hat{s}^2}{8\,} \\
 \label{eq118}
-|\mathcal{M}_3|^2_{\mathrm{unpol.}} & = & |\lambda^{j}_{\ell}\lambda^i_{\ell^{\prime}}|^2|\mathbb{P}_{\chi_1}(p-r)|^2\frac{\hat{u}(\hat{u}-m^2_{\scriptsize\xbar{U}_j})}{2}\ \\
+|\mathcal{M}_2|^2_{\mathrm{unpol.}} & = & |\lambda^{j}_{\ell}\lambda^i_{\ell^{\prime}}|^2|\mathbb{P}_{\chi_1}(p-r)|^2\frac{\hat{u}(\hat{u}-m^2_{\scriptsize\xbar{U}_j})}{2}\ \\
+\label{eq117}
+|\mathcal{M}_3|^2_{\mathrm{unpol.}} & = & |\lambda^{i}_{\ell}\lambda^j_{\ell^{\prime}}|^2|\mathbb{P}_{\chi_2}(p+k)|^2 \frac{\,\hat{s}^2}{8\,} \\
 \label{eq119}
 |\mathcal{M}_4|^2_{\mathrm{unpol.}} & = & |\lambda^{j}_{\ell}\lambda^i_{\ell^{\prime}}|^2|\mathbb{P}_{\chi_2}(p-r)|^2\frac{\hat{u}^2}{8},
 \eea
-where $\mathbb{P}_{x}(p)\equiv (p^2-m^2_x-im_x\Gamma_x)^{-1}$. For the charged cases shown in Fig.~ we have
+where $\mathbb{P}_{x}(p)\equiv (p^2-m^2_x-im_x\Gamma_x)^{-1}$.
+\begin{center}
+\begin{figure}[H]
+\centering
+%\hspace*{-0.4cm}
+\subfloat{\includegraphics[scale=0.55]{triplet_C1.pdf}}
+\hspace*{0.2\textwidth}
+%\label{fig1a}}
+\subfloat{\includegraphics[scale=0.55]{triplet_C2.pdf}}
+\caption{Charged process diagrams. The diagrams represent the $s$- and $t$-channel interactions of a neutrino of flavour $\ell$ with a down-type quark or an up-type antiquark of the $i$-th family.}
+\label{fig5}
+\end{figure}
+\end{center}
+\par
+For the charged cases shown in Fig.~\ref{fig5} we have
 \bea
 \label{eq120}
-\mathcal{M}_{I} & = & -\frac{\lambda^{i*}_{\ell}\lambda^j_{\ell^{\prime}}\mathbb{P}_{\chi_2}(p+k)}{2}[\,\xbar{v}_R(\nu_{\ell};p)\,u_L(D_i;k)\,][\,\xbar{u}_L(U_j;r)\,v_R(\nu_{\ell^{\prime}};q)\,] \\
+\mathcal{M}_{I}\,\equiv \,\,\mathcal{M}(\nu_{\ell}D_i\to \ell^{\prime}U_j)& = & -\frac{\lambda^{i*}_{\ell}\lambda^j_{\ell^{\prime}}\mathbb{P}_{\chi_2}(p+k)}{2}[\,\xbar{v}_R(\nu_{\ell};p)\,u_L(D_i;k)\,][\,\xbar{u}_L(U_j;r)\,v_R(\nu_{\ell^{\prime}};q)\,]\quad \\[2mm]
 \label{eq121}
-\mathcal{M}_{II} & = & -\frac{\lambda^{j*}_{\ell}\lambda^i_{\ell^{\prime}}\mathbb{P}_{\chi_2}(p-r)}{2}[\,\xbar{v}_R(\nu_{\ell};p)\,v_L(\xbar{D}_j;r)\,][\,\xbar{v}_L(\xbar{U}_i;k)\,v_R(\nu_{\ell^{\prime}};q)\,],
+\mathcal{M}_{II}\equiv \,\mathcal{M}(\nu_{\ell}\,\xbar{U}_i\to \ell^{\prime}\,\xbar{D}_j)& = & -\frac{\lambda^{j*}_{\ell}\lambda^i_{\ell^{\prime}}\mathbb{P}_{\chi_2}(p-r)}{2}[\,\xbar{v}_R(\nu_{\ell};p)\,v_L(\xbar{D}_j;r)\,][\,\xbar{v}_L(\xbar{U}_i;k)\,v_R(\nu_{\ell^{\prime}};q)\,],\quad
 \eea
 and the corresponding unpolarized squared amplitudes,
 \bea
@@ -798,7 +831,7 @@ and the corresponding unpolarized squared amplitudes,
 \label{eq123}
 |\mathcal{M}_{II}|^2_{\mathrm{unpol.}} & = & |\lambda^{j}_{\ell}\lambda^i_{\ell^{\prime}}|^2|\mathbb{P}_{\chi_2}(p-r)|^2\frac{\hat{u}^2}{8}. 
 \eea 
-Note that $|\mathcal{M}_{II}|^2_{\mathrm{unpol.}}=|\mathcal{M}_4|^2_{\mathrm{unpol.}}$ and if the up-quark masses are neglected, $|\mathcal{M}_I|^2_{\mathrm{unpol.}}=|\mathcal{M}_2|^2_{\mathrm{unpol.}}$. Now, let us focus on the resonant diagrams and use the narrow-width approximation for the LQs $\chi_1$ and $\chi_2$. By neglecting the up-quark masses in Eqs.~(\ref{eq116}), (\ref{eq118}) and (\ref{eq123}) we obtain for the process $\nu_{\ell} N\to \nu_{\ell^{\prime}}+X$:
+Note that $|\mathcal{M}_{II}|^2_{\mathrm{unpol.}}=|\mathcal{M}_4|^2_{\mathrm{unpol.}}$ and if the up-quark masses are neglected, $|\mathcal{M}_I|^2_{\mathrm{unpol.}}=|\mathcal{M}_2|^2_{\mathrm{unpol.}}$. Now, let us focus on the resonant diagrams and use the narrow-width approximation for the LQs $\chi_1$ and $\chi_2$. By neglecting the up-quark masses in Eqs.~(\ref{eq116}), (\ref{eq118}) and (\ref{eq122}) we obtain the following expression of the unpolarized differential cross section of the process $\nu_{\ell} N\to \nu_{\ell^{\prime}}+X$:
 \beq
 \label{eq124}
 \frac{d\sigma}{dxdy}=\sum_{i,j}|\lambda^i_{\ell}\lambda^j_{\ell^{\prime}}|^2 \left\{ \frac{f_{u_i}(x,Q^2)}{32\,m_{\chi_1}\Gamma_{\chi_1}}\,\delta(xs-m^2_{\chi_1})+\frac{f_{d_i}(x,Q^2)}{128\, m_{\chi_2}\Gamma_{\chi_2}}\,\delta(xs-m^2_{\chi_2}) \right\}
@@ -813,7 +846,7 @@ By a similar computation we can obtain the differential cross section for the ch
 \label{eq126}
 \frac{d\sigma}{dy}(\nu_{\ell} N\to \ell^{\prime}+X)=\sum_{i,j}\frac{|\lambda^i_{\ell}\lambda^j_{\ell^{\prime}}|^2}{128s}\frac{m_{\chi_2}}{\Gamma_{\chi_2}} f_{d_i}(m^2_{\chi_2}/s,m^2_{\chi_2}y).
 \eeq
-Under the assumption that the interaction of the LQs with fermions proceeds only between the first family of quarks and the first and second families of leptons, the above expressions can be simplified as follows,
+Under the assumption that the interaction of the LQs with fermions proceeds only between the first family of quarks and the first and second families of leptons, the above expressions are simplified as follows,
 \bea
 \label{eq127}
 \frac{d\sigma}{dy}(\nu_{e}N\to \nu_{e} X)&=&\frac{|\lambda^1_1|^4}{32s}F(y) \\
@@ -840,13 +873,64 @@ and
 \label{eq135}
 \frac{d\sigma}{dy}(\nu_{\mu}N\to e^- X)&=& \frac{d\sigma}{dy}(\nu_{e}N\to \mu^- X)
 \eea 
-for the charged processes. Under the assumptions that $\Gamma_{\chi_1}$ is dominated by the decay $\chi_1\to \nu_{\ell}u_j$ and $\Gamma_{\chi_2}$ is dominated by $\chi_2\to \nu_{\ell}d_j$ and $\chi_2\to \ell^- u_j$, the width can be written in terms of the couplings as follows,
+for the charged processes. Under the assumptions that $\Gamma_{\chi_1}$ is dominated by the decay $\chi_1\to \nu_{\ell}u_j$ and $\Gamma_{\chi_2}$ is dominated by $\chi_2\to \nu_{\ell}d_j$ and $\chi_2\to \ell^- u_j$, the widths can be written in terms of the couplings as follows,
 \bea
 \label{eq136}
 \Gamma_{\chi_1}&=&\frac{m_{\chi_1}}{16\pi}(|\lambda^1_1|^2+|\lambda^1_2|^2) \\
 \label{eq137}
-\Gamma_{\chi_2}&=&\frac{m_{\chi_2}}{16\pi}(|\lambda^1_1|^2+|\lambda^1_2|^2) 
+\Gamma_{\chi_2}&=&\frac{m_{\chi_2}}{16\pi}(|\lambda^1_1|^2+|\lambda^1_2|^2). 
 \eea 
+By using Eqs.~(\ref{eq127})-(\ref{eq135}) along with Eqs.~(\ref{eq136}) and (\ref{eq137}) the cross sections for the various $\nu_{\ell}N$ scattering modes can be expressed in terms of the couplings $\lambda^1_1,\lambda^1_2$ and the masses $m_{\chi_1}$ and $m_{\chi_2}$. \par
+In the case of antineutrino-nucleon scattering, the involved resonant diagrams are shown in Fig.~(\ref{fig6}) 
+\begin{center}
+\begin{figure}[H]
+\centering
+%\hspace*{-0.4cm}
+\subfloat{\includegraphics[scale=0.55]{triplet_Nbar1.pdf}}
+\hspace*{0.2\textwidth}
+%\label{fig1a}}
+\subfloat{\includegraphics[scale=0.55]{triplet_Nbar2.pdf}}\\
+\subfloat{\includegraphics[scale=0.55]{triplet_Cbar.pdf}}
+\caption{Resonant diagrams involved in $\bar{\nu}_{\ell}N$ scattering. The upper diagrams contribute to the neutral processes while the lower one contributes to the charged processes.}
+\label{fig6}
+\end{figure}
+\end{center}
+\par
+A computation similar to those performed for $\nu_{\ell}N$ scattering shows that the expressions for the antineutrino scattering are exactly the same but with the pdfs of the quarks replaced by those corresponding to the antiquarks, $f_u\to f_{\bar{u}}$ and $f_d\to f_{\bar{d}}$.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Event Rate at IceCube}
+As it is pointed out in Ref.~\cite{Soni}, in order to determine the neutrino-induced event rate at IceCube, it is necessary to compute the event spectrum $dN/dE_{\mathrm{EM}}$, where $E_{\mathrm{EM}}$ is the equivalent deposited energy. This is the visible energy relevant for detection at IceCube and it is always smaller than the incoming neutrino energy $E_{\nu}$ by a factor that depends on the considered interaction channel. Guided by the discussion given in Ref.~\cite{Soni}, we can list the equivalent deposited energy for each case as follows,
+\begin{itemize}
+\item In the case of neutral events (N), the energy of the outgoing hadrons $X$ is $E_X=y E_{\nu}$. The deposited EM-equivalent energy is given by $E_{\mathrm{EM, N}}=E_{\mathrm{EM, had}}=F_X y E_{\nu}$, where the factor $F_X$ is parameterized as
+\beq
+\label{eq138}
+F_X=1-\left(\frac{E_X}{E_0}\right)^{-m}(1-f_0),
+\eeq
+where $E_0=0.399~\mathrm{GeV}$, $m=0.130$ and $f_0=0.467$.
+\item In the case of $\nu_e N$ charged events (C), the final state electron deposits its entire energy $E_{\mathrm{EM,e}}=(1-y)E_{\nu}$ while the accompanying hadronic shower deposits $E_{\mathrm{EM, had}}$. Hence, the total deposited EM-equivalent energy is $E_{\mathrm{EM,C}}=E_{\mathrm{EM,e}}+E_{\mathrm{EM, had}}$. The same argument is still valid for $\nu_{\mu} N$ charged events providing that the final state muons are completely measurable. 
+\item In the case of $\nu_{\tau}N$ events, $80\%$ of the $\tau$-decays result in EM and hadronic showers while the remaining $20\%$ give rise to distinct muon tracks. The hadronic showers deposit an energy of approximately $(1/2)F_X(1-y)E_{\nu}$, with the other half corresponding to the $\nu_{\tau}$'s, whereas in the case of purely leptonic tau decays, the deposited energy is of roughly $(1/3)(1-y)E_{\nu}$, with the rest of the energy carried away by the associated neutrinos. Schematically, we have
+$$\tau^- \to \nu_{\tau}W^- \left\{ \begin{matrix}
+\to \nu_{\tau}\bar{u}_id_j & \mbox{showers} & E_{\mathrm{EM}}\simeq(1/2)F_X(1-y)E_{\nu}\\
+\to\nu_{\tau} e^-\bar{\nu}_{e} & \mbox{showers} & E_{\mathrm{EM}}\simeq(1/3)(1-y)E_{\nu}\\
+\to \nu_{\tau} \mu^- \bar{\nu}_{\mu} & \mbox{tracks} & E_{\mathrm{EM}}\simeq(1/3)(1-y)E_{\nu}\,.
+\end{matrix} \right .$$
+\end{itemize}  
+\par
+Another important ingredient in the computation of the event rate is the incoming neutrino flux. There are several models for this flux, with the most simple being the single power law model 
+\beq
+\label{eq139}
+\frac{d\phi}{dE_{\nu}}= \phi_0f_i \left(\frac{E_{\nu}}{100~\mathrm{TeV}}\right)^{-\gamma},
+\eeq
+where $f_i$ is the fraction of neutrinos of the $i$th flavour at Earth, $\gamma$ is the power law spectral index and $\phi$ is the all-flavor neutrino flux at $100~\mathrm{TeV}$. The observed spectral parameters given in Ref.~\cite{icecubeLL} are 
+\beq
+\label{eq139}
+\phi_0 = (6.7^{+1.1}_{-1.2})\times 10^{-18}~\mathrm{GeV}^{-1}\mathrm{s}^{-1}\mathrm{sr}^{-1}\mathrm{cm}^{-2},
+\eeq
+\beq
+\label{eq140}
+\gamma = 2.50 \pm 0.09 \,.
+\eeq
+In general, an equal $\nu$ and $\bar{\nu}$ is assumed (see Ref.~\cite{icecube1}). Also, the conventional neutrino flavor ratio at earth is $(\frac{1}{3}:\frac{1}{3}:\frac{1}{3})$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \appendix
