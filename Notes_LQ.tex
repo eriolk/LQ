@@ -128,17 +128,17 @@
     Universidad Nacional de La Plata, C.C. 67, 1900 La Plata,
     Argentina \vspace*{8mm}}}
 
-\author{Nicolas Mileo}
-\email{mileo@fisica.unlp.edu.ar}
-\laplata
+%\author{Nicolas Mileo}
+%\email{mileo@fisica.unlp.edu.ar}
+%\laplata
 
 %\author{Ken Kiers}
 %\email{knkiers@taylor.edu}
 %\tayloru
 
-\author{Alejandro Szynkman}
-\email{szynkman@fisica.unlp.edu.ar}
-\laplata
+%\author{Alejandro Szynkman}
+%\email{szynkman@fisica.unlp.edu.ar}
+%\laplata
 
 \date{\vspace*{2mm}\today \\\bigskip\bigskip}
 \maketitle
@@ -886,17 +886,45 @@ In the case of antineutrino-nucleon scattering, the involved resonant diagrams a
 \begin{figure}[H]
 \centering
 %\hspace*{-0.4cm}
-\subfloat{\includegraphics[scale=0.55]{triplet_Nbar1.pdf}}
+\subfloat{\includegraphics[scale=0.465]{triplet_Nbar1.pdf}}
 \hspace*{0.2\textwidth}
 %\label{fig1a}}
-\subfloat{\includegraphics[scale=0.55]{triplet_Nbar2.pdf}}\\
-\subfloat{\includegraphics[scale=0.55]{triplet_Cbar.pdf}}
+\subfloat{\includegraphics[scale=0.465]{triplet_Nbar2.pdf}}\\
+\subfloat{\includegraphics[scale=0.465]{triplet_Cbar.pdf}}
 \caption{Resonant diagrams involved in $\bar{\nu}_{\ell}N$ scattering. The upper diagrams contribute to the neutral processes while the lower one contributes to the charged processes.}
 \label{fig6}
 \end{figure}
 \end{center}
 \par
 A computation similar to those performed for $\nu_{\ell}N$ scattering shows that the expressions for the antineutrino scattering are exactly the same but with the pdfs of the quarks replaced by those corresponding to the antiquarks, $f_u\to f_{\bar{u}}$ and $f_d\to f_{\bar{d}}$.
+\par In Figs.~\ref{fig7} and \ref{fig8} we show the cross section versus the incoming neutrino energy for the neutral processes in Eqs.~(\ref{eq127})-(\ref{eq130}) and the charged processes that produce showers (Eqs.~(\ref{eq132}) and (\ref{eq135})). In Fig.~(\ref{fig7}), we consider an scenario in which the LQs are degenerate in mass with $m_{\chi_1}=m_{\chi_2}=\,600~\mathrm{GeV}$, whereas in Fig.~(\ref{fig8}) we take $m_{\chi_1}=\,600~\mathrm{GeV}$ and $m_{\chi_2}=\,650~\mathrm{GeV}$ and assume that $s>m^2_{\chi_2}$ so that both LQs can be produced on-shell. Both figures asumme $\lambda^1_1=\lambda^1_2=1$. We note that with this choice of the couplings, the cross sections of the charged processes producing showers and tracks are the same. Thus, we only include showers in the charged case. 
+\begin{center}
+\begin{figure}[H]
+\centering
+%\hspace*{-0.4cm}
+\subfloat{\includegraphics[scale=0.44]{sigmaN1.pdf}}
+%\hspace*{0.2\textwidth}
+%\label{fig1a}}
+\subfloat{\vspace*{1cm}\includegraphics[scale=0.445]{sigmaCsh1.pdf}}
+\hspace*{4mm}
+\caption{Cross sections versus the incoming neutrino energy in an scenario with $m_{\chi_1}=m_{\chi_2}=\,600~\mathrm{GeV}$ and $\lambda^1_1=\lambda^1_2$. The left diagram corresponds to the sum of Eqs.~(\ref{eq127})-(\ref{eq130}) and the right diagram to the sum of Eqs.~(\ref{eq132}) and (\ref{eq135}).}
+\label{fig7}
+\end{figure}
+\end{center}
+\begin{center}
+\begin{figure}[H]
+\centering
+%\hspace*{-0.4cm}
+\subfloat{\includegraphics[scale=0.44]{sigmaN2.pdf}}
+%\hspace*{0.2\textwidth}
+%\label{fig1a}}
+\subfloat{\vspace*{1cm}\includegraphics[scale=0.445]{sigmaCsh2.pdf}}
+\hspace*{4mm}
+\caption{Cross sections versus the incoming neutrino energy in an scenario with $m_{\chi_1}=\, 600~\mathrm{GeV}$, $m_{\chi_2}=\,650~\mathrm{GeV}$ and $\lambda^1_1=\lambda^1_2$. The left diagram corresponds to the sum of Eqs.~(\ref{eq127})-(\ref{eq130}) and the right diagram to the sum of Eqs.~(\ref{eq132}) and (\ref{eq135}).}
+\label{fig8}
+\end{figure}
+\end{center}
+\par As can be seen from the Figs~(\ref{fig7}) and (\ref{fig8}) the cross sections corresponding to both scenarios are quite similar with those asocciated to the first one being slightly higher.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Event Rate at IceCube}
 As it is pointed out in Ref.~\cite{Soni}, in order to determine the neutrino-induced event rate at IceCube, it is necessary to compute the event spectrum $dN/dE_{\mathrm{EM}}$, where $E_{\mathrm{EM}}$ is the equivalent deposited energy. This is the visible energy relevant for detection at IceCube and it is always smaller than the incoming neutrino energy $E_{\nu}$ by a factor that depends on the considered interaction channel. Guided by the discussion given in Ref.~\cite{Soni}, we can list the equivalent deposited energy for each case as follows,
@@ -930,7 +958,78 @@ where $f_i$ is the fraction of neutrinos of the $i$th flavour at Earth, $\gamma$
 \label{eq140}
 \gamma = 2.50 \pm 0.09 \,.
 \eeq
-In general, an equal $\nu$ and $\bar{\nu}$ is assumed (see Ref.~\cite{icecube1}). Also, the conventional neutrino flavor ratio at earth is $(\frac{1}{3}:\frac{1}{3}:\frac{1}{3})$.
+In general, an equal $\nu$ and $\bar{\nu}$ is assumed (see Ref.~\cite{icecube1}). Also, the conventional neutrino flavor ratio at earth is $(\frac{1}{3}:\frac{1}{3}:\frac{1}{3})$. \par
+The total number of events expected from the LQ contribution can be written as follows,
+\beq
+\label{eq141}
+N  = T\cdot \Omega\cdot \int_0^{\infty}dE_{\nu}\,N_{\mathrm{eff}}(E_{\nu})\frac{d\phi}{dE_{\nu}}\int_0^1 dy\frac{d\sigma}{dy}\\[2mm]
+\eeq
+where $T$ is the time of exposure, $\Omega$ is the solid angle of coverage and $N_{\mathrm{eff}}(E_{\nu})$ is the effective number of targets nucleons. From Eq.~(\ref{eq141}), we have
+\beq
+\label{eq142}
+\frac{dN}{dE_{\nu}dy}=T\cdot \Omega \cdot N_{\mathrm{eff}}(E_{\nu})\frac{d\sigma}{dy}\frac{d\phi}{dE_{\nu}}, 
+\eeq
+and hence
+\beq
+\label{eq143}
+\frac{dN}{dEdy}=\frac{dN}{dE_{\nu}dy}\frac{dE_{\nu}}{dE},
+\eeq
+where $E$ stands for the EM-equivalent deposited energy. We note that the quantity $dE_{\nu}/dE$ depends on the type of process. Now, the number of events in a bin $\Delta$ of deposited energy between $E_i$ and $E_f$ can be written as
+\beq
+\label{eq144}
+N_{\Delta}=\int^{E_f}_{E_i}\frac{dN}{dE}dE=\int^1_0 \int^{E_f}_{E_i} dydE \frac{dN}{dEdy}. 
+\eeq  
+\par By using Eqs.~(\ref{eq142}), (\ref{eq143}) and (\ref{eq144}), we obtain
+\beq
+\label{eq145}
+N_{\Delta}= T\cdot \Omega \cdot \int^1_0 \int^{E_f}_{E_i} dydE \,N_{\mathrm{eff}}\frac{d\sigma}{dy}\frac{d\phi}{dE_{\nu}}\frac{dE_{\nu}}{dE}.
+\eeq
+By changing variables from $E$ to $E_{\nu}$, Eq.~(\ref{eq145}) can be written as follows
+\beq
+\label{eq146}
+N_{\Delta}= T\cdot \Omega \cdot \int^1_0 \int^{E^f_{\nu}(E_f,y)}_{E^i_{\nu}(E_i,y)} dydE_{\nu} \,N_{\mathrm{eff}}\frac{d\sigma}{dy}\frac{d\phi}{dE_{\nu}}  
+\eeq
+\begin{center}
+\begin{figure}[H]
+\centering
+%\hspace*{-0.4cm}
+\subfloat{\includegraphics[scale=0.44]{dnNplot1.pdf}}
+%\hspace*{0.2\textwidth}
+%\label{fig1a}}
+\subfloat{\vspace*{1cm}\includegraphics[scale=0.445]{dnCshplot1.pdf}}
+\hspace*{4mm}
+\caption{Event distribution in terms of the incoming neutrino energy for different values of the LQs masses assuming $\lambda^1_1=\lambda^1_2=1$. The left diagram corresponds to $(\nu_{e,\mu} + \bar{\nu}_{e,\mu})N$ neutral scattering and the right diagram to $(\nu_{e}+\bar{\nu}_e)N$ charged scattering.} 
+\label{fig9}
+\end{figure}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\renewcommand{\arraystretch}{1.4}
+\begin{table}[H]
+\caption{Total number of events in the range $50~\mathrm{TeV}<E_{\nu}<2~\mathrm{PeV}$ for different values of the LQs masses, assuming $\lambda^1_1=\lambda^1_2=1$. The values are obtained by using the parameters given in Eqs.~(\ref{eq140}) and (\ref{eq141}) for the neutrino flux, a solid angle of $4\pi$ and a time exposure of $662$ days. In case of considering $4$ years of IceCube data, these numbers need to be multiplied by $\sim 2$.}
+\label{table1}
+\begin{center}
+\begin{tabular}{|C{2cm}|C{2cm}||C{4cm}|}
+%\begin{tabular}{|c|r||r|c||r|c||r|c|}
+\hhline{|===|}
+%\hhline{|--------|}
+$m_{\chi_1} (\mathrm{GeV})$ & $m_{\chi_2} (\mathrm{GeV})$ & $N_{\mathrm{ev}} \mbox{ in } [50~\mathrm{TeV},2~\mathrm{PeV}]$ \\ 
+\hhline{|===|} 
+%\hhline{|--------|}
+$600$ & $600$ & $4.4$ \\[0.6mm]
+\hline
+$600$ & $650$ & $3.8$ \\[0.6mm]
+\hline
+$700$ & $700$ & $1.8$ \\[0.6mm]
+\hline
+$700$ & $750$ & $1.6$ \\[0.6mm]
+\hline
+$800$ & $800$ & $0.8$ \\[0.6mm]
+\hhline{|===|}
+%\hhline{|--------|}
+\end{tabular}
+\end{center} 
+\end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \appendix
